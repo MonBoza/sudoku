@@ -22,6 +22,7 @@ describe ("grid", () => {
     test("should return true if all values are unique", () => {
         expect(grid.checkGrid()).toEqual(true);
     });
-    // test("return false if any values are the same")
-    // expect(gird.checkGrid()).toEqual(false);
+    test("return false if any values are the same", () => {
+    expect(grid.checkGrid()).toEqual(false);
+    });
 });

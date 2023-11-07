@@ -20,5 +20,5 @@ Grid.prototype.checkGrid = function () {
             return false;
         }
     }
-    return true;
+    // return true;
 };
