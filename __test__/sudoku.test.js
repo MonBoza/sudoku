@@ -49,4 +49,9 @@ describe("Columns", () => {
     test("should return true if all values are unique", () => {
         expect(columns.checkColumns()).toEqual(true);
     });
+
+    test("return false if any values are the same", () => {
+        let columns2 = new Columns(2,1,4,5,6,8,8,9,3);
+        expect(columns2.checkColumns()).toEqual(false);
+    });
 });
