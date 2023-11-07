@@ -11,5 +11,14 @@ export function Grid(a1,a2,a3,b1,b2,b3,c1,c2,c3) {
 }
 
 Grid.prototype.checkGrid = function () {
+    let uniqueValues = [];
 
+    for (const key in this) {
+        if (!uniqueValues.includes(this[key])) {
+            uniqueValues.push(this[key])
+        } else {
+            return false;
+        }
+    }
+    return true;
 };

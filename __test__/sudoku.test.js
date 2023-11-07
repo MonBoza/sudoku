@@ -20,6 +20,8 @@ describe ("grid", () => {
     });
     
     test("should return true if all values are unique", () => {
-        expect(checkGrid()).toEqual(true);
-    })
+        expect(grid.checkGrid()).toEqual(true);
+    });
+    // test("return false if any values are the same")
+    // expect(gird.checkGrid()).toEqual(false);
 });
